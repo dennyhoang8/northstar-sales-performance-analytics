@@ -1,39 +1,36 @@
 # NorthStar Sales Performance Analytics
 
-## Overview
+## Project Overview
+This project analyzes sales performance data to identify revenue trends, top-performing products, regional performance, and customer insights. The goal is to turn raw sales data into useful business insights for decision-making.
 
-NorthStar Outfitters is a fictional retail company created for a data analytics portfolio project.
+## Business Questions
+- What is the total revenue?
+- Which products generate the most revenue?
+- Which regions perform the best?
+- Who are the top customers?
+- What sales trends can be identified over time?
 
-This project uses a public retail sales dataset to analyze sales performance, profitability, customer behavior, regional trends, and product-level performance.
-
-## Business Problem
-
-NorthStar Outfitters wants to understand what is driving revenue and profit across products, regions, customers, and time periods. Leadership needs clear insights and dashboards to support better sales, pricing, and inventory decisions.
-
-## Tools & Technologies
-
+## Tools Used
 - Python
-- SQL
 - Pandas
-- NumPy
-- Matplotlib
-- Plotly
-- Power BI
-- Tableau
-- Git
-- GitHub
+- Excel / CSV
+- Git & GitHub
+- VS Code
 
-## Project Goals
+## Key Analysis
+- Cleaned and prepared sales data
+- Created revenue calculations
+- Grouped revenue by product, region, and customer
+- Identified top-performing categories
+- Prepared insights for business reporting
 
-- Clean and prepare sales data
-- Analyze revenue, profit, quantity sold, and discount trends
-- Identify top-performing products, regions, and customers
-- Build visualizations and dashboards
-- Provide business recommendations
-
-## Project Status
-
-- [x] Repository initialized
-- [x] Business Requirements Document completed
-- [x] Dataset imported
-- [ ] Data exploration
+## Project Structure
+```text
+northstar-sales-performance-analytics/
+│
+├── data/
+├── notebooks/
+├── reports/
+├── src/
+├── README.md
+└── requirements.txt
