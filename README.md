@@ -30,3 +30,10 @@ NorthStar Outfitters wants to understand what is driving revenue and profit acro
 - Identify top-performing products, regions, and customers
 - Build visualizations and dashboards
 - Provide business recommendations
+
+## Project Status
+
+- [x] Repository initialized
+- [x] Business Requirements Document completed
+- [x] Dataset imported
+- [ ] Data exploration
