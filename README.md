@@ -1,12 +1,8 @@
 # NorthStar Sales Performance Analytics
 
-## Project Overview
+An end-to-end business analytics project demonstrating the complete analytics workflow—from raw sales data to executive dashboards and business recommendations.
 
-NorthStar Sales Performance Analytics is an end-to-end business analytics project that simulates a real-world engagement for **NorthStar Outfitters**, a fictional retail company specializing in outdoor equipment, apparel, and sporting goods across the United States.
-
-Using **Python, SQL, Power BI, Tableau, and modern data analytics techniques**, this project transforms raw sales transaction data into actionable business insights through data cleaning, exploratory analysis, KPI development, interactive dashboards, and executive-level reporting.
-
-The objective is to demonstrate the complete analytics workflow that a Data Analyst or Business Analyst would perform—from raw data to business recommendations.
+Using **Python, Pandas, SQL, and Power BI**, this project transforms retail sales transactions into actionable business insights through data cleaning, exploratory data analysis, KPI development, and executive reporting.
 
 ---
 
@@ -30,28 +26,44 @@ The objective is to demonstrate the complete analytics workflow that a Data Anal
 
 ---
 
+# Project Overview
+
+NorthStar Sales Performance Analytics simulates a real-world analytics engagement for **NorthStar Outfitters**, a fictional retail company specializing in outdoor equipment, apparel, and sporting goods across the United States.
+
+The project demonstrates how a Data Analyst transforms raw transactional data into meaningful business insights that support strategic decision-making.
+
+The project includes:
+
+- Business requirements analysis
+- Data cleaning and preprocessing
+- Exploratory Data Analysis (EDA)
+- SQL business analysis
+- KPI development
+- Interactive Power BI dashboards
+- Executive business reporting
+
+---
+
 # Business Questions
 
 This project answers the following business questions:
 
-- What is the company's total sales revenue?
+- What is the company's overall sales performance?
 - Which product categories generate the highest revenue?
-- Which products generate the highest profit?
-- Which geographic regions perform the best?
-- Which states contribute the most sales?
+- Which regions perform the best?
+- How do sales change over time?
+- Which customer segment generates the highest profit?
 - Who are the highest-value customers?
-- How do customer segments differ in profitability?
-- What sales trends exist over time?
-- Which customers generate high revenue but low profitability?
-- What business opportunities can improve overall performance?
+- Which customers generate high sales but low profitability?
+- What business opportunities exist to improve overall performance?
 
 ---
 
 # Dataset
 
-**Sample Superstore Dataset**
+This project uses the **Sample Superstore** dataset containing approximately **9,900 retail sales transactions**.
 
-The dataset contains approximately **9,900 retail transactions** spanning multiple years and includes:
+The dataset includes:
 
 - Orders
 - Customers
@@ -71,32 +83,26 @@ The dataset contains approximately **9,900 retail transactions** spanning multip
 
 - Python
 - Pandas
-- NumPy
-- Matplotlib
 - SQL
 - Power BI
-- Tableau
-- Excel / CSV
+- Excel
 - Git
 - GitHub
 - Visual Studio Code
 
 ---
 
-# Project Workflow
+# Analytics Workflow
 
-This project follows a complete business analytics workflow:
-
-1. Business Requirements Gathering
+1. Business Requirements Analysis
 2. Data Acquisition
 3. Data Cleaning & Preprocessing
 4. Exploratory Data Analysis (EDA)
 5. SQL Business Analysis
 6. KPI Development
 7. Power BI Dashboard Development
-8. Tableau Dashboard Development
-9. Executive Business Reporting
-10. Business Recommendations
+8. Executive Business Reporting
+9. Business Recommendations
 
 ---
 
@@ -106,7 +112,7 @@ The project includes:
 
 - Data cleaning and preprocessing
 - Exploratory Data Analysis (EDA)
-- Revenue analysis
+- Sales trend analysis
 - Profitability analysis
 - Customer analysis
 - Product performance analysis
@@ -114,59 +120,53 @@ The project includes:
 - KPI development
 - SQL business queries
 - Interactive Power BI dashboards
-- Tableau visualizations
 - Executive business reporting
 
 ---
 
 # Key Insights
 
-Key findings from the analysis include:
+The analysis identified several important business findings:
 
 - Technology generated the highest overall sales revenue.
-- The West region consistently outperformed other regions.
+- The West region consistently generated the strongest sales performance.
 - Consumer customers generated the highest overall profit.
-- Several high-revenue customers were unprofitable, highlighting potential pricing or discount optimization opportunities.
-- Sales increased over time while maintaining an overall profit margin above 12%.
-- Geographic analysis identified strong sales concentration across western and eastern states.
+- Several high-sales customers generated negative profit, highlighting pricing and discount optimization opportunities.
+- Sales steadily increased over the analysis period while maintaining an overall profit margin of 12.47%.
 
 ---
 
 # Skills Demonstrated
 
-### Data Analytics
+## Data Analysis
 
 - Data Cleaning
 - Data Transformation
 - Exploratory Data Analysis (EDA)
-- Business Analytics
-- Statistical Analysis
 - KPI Development
+- Business Analytics
 
-### Programming
+## Programming
 
 - Python
 - Pandas
-- NumPy
 - SQL
 
-### Business Intelligence
+## Business Intelligence
 
-- Power BI Dashboard Development
-- Tableau Dashboard Development
+- Power BI
 - DAX Measures
 - Interactive Dashboards
 - Data Visualization
 - Executive Reporting
-- Business Storytelling
 
-### Professional Skills
+## Professional Skills
 
 - Business Requirements Analysis
+- Business Storytelling
 - Problem Solving
-- Decision Support
-- Git Version Control
 - Documentation
+- Git Version Control
 
 ---
 
@@ -176,21 +176,33 @@ Key findings from the analysis include:
 northstar-sales-performance-analytics/
 │
 ├── dashboards/
+│   └── NorthStar_Sales_Dashboard.pbix
 │
 ├── data/
-│   ├── raw/
-│   └── cleaned/
+│   ├── cleaned/
+│   │   └── superstore_cleaned.csv
+│   │
+│   └── raw/
+│       └── Sample - Superstore.xls
+│
+├── database/
+│   └── superstore.db
 │
 ├── docs/
 │   └── business_requirements.md
 │
 ├── notebooks/
+│   ├── 00_notebook_guide.ipynb
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_exploratory_data_analysis.ipynb
+│   └── 04_data_visualization.ipynb
 │
 ├── reports/
+│   └── NorthStar_Sales_Performance_Executive_Report.pdf
 │
 ├── sql/
-│
-├── src/
+│   └── 01_business_analysis.sql
 │
 ├── visuals/
 │   ├── executive-overview.png
@@ -198,47 +210,55 @@ northstar-sales-performance-analytics/
 │   └── customer-analysis.png
 │
 ├── .gitignore
+├── LICENSE
 ├── README.md
 └── requirements.txt
 ```
 
 ---
 
-# Deliverables
+# Repository Contents
 
-This project includes:
+### Dashboards
 
-- Cleaned sales dataset
-- Python analytics workflow
-- SQL business queries
-- Exploratory Data Analysis (EDA)
-- Power BI executive dashboards
-- Tableau dashboards
-- Executive business report
-- Business recommendations
-- Complete GitHub documentation
+- **NorthStar_Sales_Dashboard.pbix** — Interactive Power BI dashboard containing executive, sales, and customer analysis pages.
+
+### Executive Report
+
+- **NorthStar_Sales_Performance_Executive_Report.pdf** — Executive summary of the analysis, key findings, and business recommendations.
+
+### Jupyter Notebooks
+
+- Data exploration
+- Data cleaning
+- Exploratory data analysis
+- Data visualization
+
+### SQL
+
+- Business analysis queries performed using SQLite.
 
 ---
 
 # Business Value
 
-This project demonstrates how raw transactional data can be transformed into meaningful business intelligence.
+This project demonstrates how transactional sales data can be transformed into meaningful business intelligence.
 
 The dashboards enable stakeholders to:
 
-- Monitor company performance through KPIs
-- Identify top-performing products and customer segments
-- Analyze regional sales performance
-- Detect profitability opportunities
-- Support strategic business decision-making
+- Monitor company performance using executive KPIs.
+- Identify top-performing products and customer segments.
+- Analyze regional sales performance.
+- Evaluate customer profitability.
+- Support strategic business decisions with data-driven insights.
 
 ---
 
 # Results
 
-This project successfully demonstrates an end-to-end analytics workflow using Python, SQL, Power BI, and Tableau.
+This project demonstrates an end-to-end analytics workflow commonly performed by Data Analysts and Business Analysts.
 
-The final solution showcases practical skills in data cleaning, analysis, dashboard development, KPI reporting, and business storytelling—mirroring the responsibilities of a professional Data Analyst.
+Using Python for data preparation, SQL for business analysis, and Power BI for dashboard development, the project transforms raw sales data into interactive business intelligence and executive reporting.
 
 ---
 
@@ -246,28 +266,34 @@ The final solution showcases practical skills in data cleaning, analysis, dashbo
 
 Potential future improvements include:
 
-- Sales forecasting using Machine Learning
+- Sales forecasting using machine learning
 - Customer segmentation using clustering algorithms
 - Inventory optimization analysis
 - Marketing campaign performance analysis
 - Automated reporting pipelines
-- Cloud deployment (Azure / AWS)
+- Cloud deployment
 - Real-time business intelligence dashboards
 
 ---
 
 # Project Status
 
+**Status:** Completed
+
 Completed project components:
 
-- Business Requirements Document (BRD)
+- Business Requirements Document
 - Data Cleaning & Preprocessing
 - Exploratory Data Analysis (EDA)
 - SQL Business Analysis
-- KPI Development
 - Power BI Dashboard
-- Tableau Dashboard
 - Executive Business Report
 - GitHub Documentation
 
 ---
+
+# Author
+
+**Denny Hoang**
+
+This project was created as part of a professional Data Analytics portfolio demonstrating practical skills in Python, SQL, Power BI, and business analytics.

@@ -9,9 +9,9 @@
 
 NorthStar Outfitters is a fictional retail company specializing in outdoor equipment, apparel, and sporting goods across the United States.
 
-The executive leadership team has requested a comprehensive analysis of company sales performance to better understand revenue trends, profitability, customer behavior, and regional performance.
+Executive leadership requested a comprehensive analysis of company sales performance to better understand revenue trends, profitability, customer behavior, and regional performance.
 
-This project simulates a real-world business consulting engagement using a publicly available retail sales dataset. The goal is to transform raw transactional data into actionable business insights that support strategic decision-making.
+This project simulates a real-world business analytics engagement using the Sample Superstore retail dataset. The objective is to transform raw transactional sales data into actionable business insights through data cleaning, SQL analysis, interactive Power BI dashboards, and executive reporting.
 
 ---
 
@@ -19,15 +19,15 @@ This project simulates a real-world business consulting engagement using a publi
 
 NorthStar Outfitters operates multiple retail locations and online sales channels throughout the United States.
 
-Although revenue has steadily increased over recent years, leadership has observed inconsistent profit growth and limited visibility into the factors driving business performance.
+Although revenue has grown over recent years, leadership has limited visibility into sales performance across products, customers, and geographic regions, making it difficult to prioritize business decisions.
 
-The company requires a centralized analytics solution capable of transforming raw sales data into meaningful insights through modern business intelligence tools and data analytics.
+The company requires a centralized analytics solution capable of transforming raw sales data into meaningful insights through modern business intelligence and data analytics techniques.
 
 ---
 
 # 3. Project Stakeholders
 
-The primary stakeholders for this project include:
+The primary stakeholders include:
 
 - Executive Leadership Team
 - Sales Department
@@ -43,19 +43,18 @@ Each stakeholder relies on accurate reporting and analytical insights to support
 
 # 4. Business Problem
 
-Executive leadership currently lacks a centralized view of overall business performance.
+Executive leadership currently relies on fragmented reports from multiple departments, making it difficult to evaluate overall business performance and identify actionable opportunities.
 
-Reporting is fragmented across departments, making it difficult to identify:
+Leadership requires a centralized reporting solution capable of identifying:
 
 - High-performing products
 - Underperforming products
 - Regional sales trends
 - Customer purchasing behavior
 - Profitability trends
-- Discount effectiveness
 - Business growth opportunities
 
-Leadership requires data-driven recommendations that improve profitability, optimize operations, and support informed business decisions.
+The organization requires data-driven recommendations that improve profitability, optimize operations, and support informed business decisions.
 
 ---
 
@@ -80,22 +79,22 @@ The objectives of this project are to:
 The project includes:
 
 - Data acquisition
-- Data cleaning
+- Data cleaning and preprocessing
 - Data validation
 - Exploratory Data Analysis (EDA)
-- SQL analysis
-- Statistical analysis
+- SQL business analysis
 - KPI development
-- Business intelligence dashboards
-- Data visualization
-- Executive reporting
+- Interactive Power BI dashboards
+- Executive business reporting
 - Business recommendations
 
 ---
 
 # 7. Data Sources
 
-The project utilizes a publicly available retail sales dataset containing business transaction data including:
+The project utilizes the Sample Superstore retail dataset containing approximately 9,900 business transactions.
+
+The dataset includes:
 
 - Orders
 - Customers
@@ -105,37 +104,33 @@ The project utilizes a publicly available retail sales dataset containing busine
 - States
 - Sales
 - Profit
-- Quantity Sold
+- Quantity
 - Discounts
 - Shipping Information
-
-Additional supporting datasets may be incorporated in future project enhancements.
 
 ---
 
 # 8. Key Business Questions
 
-The analysis will answer the following business questions:
+The analysis answers the following business questions:
 
-1. Which products generate the highest revenue?
+1. Which product categories generate the highest revenue?
 
 2. Which products generate the highest profit?
 
-3. Which product categories underperform?
+3. Which regions generate the highest sales?
 
-4. Which regions generate the most revenue?
+4. Which states contribute the most revenue?
 
-5. Which states are the most profitable?
+5. How do sales change over time?
 
-6. Who are the highest-value customers?
+6. Which customer segment generates the highest profit?
 
-7. How do discounts impact profitability?
+7. Who are the highest-value customers?
 
-8. What sales trends exist over time?
+8. Which customers generate high sales but low profitability?
 
-9. Which customer segments generate the greatest business value?
-
-10. What recommendations can improve company profitability?
+9. What business opportunities exist to improve overall performance?
 
 ---
 
@@ -146,31 +141,24 @@ The primary KPIs include:
 - Total Sales
 - Total Profit
 - Profit Margin
+- Total Orders
+- Total Customers
 - Average Order Value
-- Sales Growth
-- Profit Growth
-- Quantity Sold
-- Average Discount
-- Customer Lifetime Value (Estimated)
-- Regional Performance
-- State Performance
-- Product Performance
-- Category Performance
+- Product Category Performance
+- Regional Sales Performance
+- Customer Segment Performance
 
 ---
 
 # 10. Deliverables
 
-The completed project will include:
+The completed project includes:
 
-- Python analytics workflow
-- Data cleaning pipeline
-- SQL business queries
+- Business Requirements Document (BRD)
+- Python data cleaning workflow
 - Exploratory Data Analysis (EDA)
-- Statistical analysis
-- Interactive visualizations
-- Power BI dashboard
-- Tableau dashboard
+- SQL business queries
+- Interactive Power BI dashboards
 - Executive business report
 - Business recommendations
 - GitHub repository with complete documentation
@@ -179,33 +167,32 @@ The completed project will include:
 
 # 11. Success Criteria
 
-The project will be considered successful if leadership can:
+The project will be considered successful when stakeholders can:
 
-- Monitor business performance through interactive dashboards
-- Identify top-performing and underperforming products
-- Understand customer purchasing behavior
-- Evaluate regional and state sales performance
-- Track company KPIs in real time
-- Improve strategic decision-making through analytical insights
-- Access project documentation and analytical workflows through GitHub
+- View company performance through a centralized Power BI dashboard.
+- Analyze sales, profit, customers, and regional performance.
+- Filter results interactively by business dimensions.
+- Identify high-performing and underperforming products.
+- Support business decisions using data-driven insights.
+- Access project documentation and analytical workflows through GitHub.
 
 ---
 
 # 12. Assumptions & Limitations
 
-### Assumptions
+## Assumptions
 
 - The dataset accurately represents historical sales transactions.
 - Customer information is complete and reliable.
 - Sales and profit calculations are accurate.
-- Historical performance is representative of normal business operations.
+- Historical performance reflects normal business operations.
 
-### Limitations
+## Limitations
 
-- Customer Lifetime Value is estimated using available transaction history.
-- Findings are based solely on the provided dataset.
+- Findings are based solely on the Sample Superstore dataset.
 - External economic conditions are not included in the analysis.
 - Recommendations are limited to the variables available within the dataset.
+- Results are intended for demonstration purposes using a fictional business scenario.
 
 ---
 
@@ -214,10 +201,8 @@ The project will be considered successful if leadership can:
 Potential future improvements include:
 
 - Sales forecasting using machine learning
-- Customer segmentation with clustering algorithms
+- Customer segmentation using clustering algorithms
 - Inventory optimization analysis
-- Marketing campaign effectiveness analysis
-- Geographic sales mapping
+- Marketing campaign performance analysis
 - Automated reporting pipelines
 - Cloud deployment
-- Real-time dashboard integration
